@@ -1,7 +1,7 @@
-# Tugas Besar Day 2 Training ARC 2022
+# Day 1 Hands-On Training ARC 2022 (Full-stack)
 ## Deskripsi aplikasi
 Aplikasi ini merupakan pengembangan aplikasi todo pada hands-on day 1 menjadi aplikasi full-stack.
-Aplikasi ini memiliki fitur-fitur:
+Aplikasi ini memiliki fitur:
   - Melihat daftar todo
   - Menambah todo
   - Menghapus todo
