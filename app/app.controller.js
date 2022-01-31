@@ -37,46 +37,24 @@ exports.findAll = (req, res) => {
     });
 };
 
-// Find a single todo with a todoId
-exports.findOne = (req, res) => {
-    Todo.findById(req.params.todoId)
-    .then(todo => {
-        if(!todo) {
-            return res.status(404).send({
-                message: "Todo not found with id " + req.params.todoId
-            });            
-        }
-        res.send(todo);
-    }).catch(err => {
-        if(err.kind === 'ObjectId') {
-            return res.status(404).send({
-                message: "Todo not found with id " + req.params.todoId
-            });                
-        }
-        return res.status(500).send({
-            message: "Error retrieving todo with id " + req.params.todoId
-        });
-    });
-};
-
-// Delete a todo with the specified todoId in the request
+// Delete a todo with the specified id in the request
 exports.delete = (req, res) => {
-    Todo.findByIdAndRemove(req.params.todoId)
+    Todo.findByIdAndRemove(req.body.id)
     .then(todo => {
         if(!todo) {
             return res.status(404).send({
-                message: "Todo not found with id " + req.params.todoId
+                message: "Todo not found with id " + req.body.id
             });
         }
         res.send({message: "Todo deleted successfully!"});
     }).catch(err => {
         if(err.kind === 'ObjectId' || err.name === 'NotFound') {
             return res.status(404).send({
-                message: "Todo not found with id " + req.params.todoId
+                message: "Todo not found with id " + req.body.id
             });                
         }
         return res.status(500).send({
-            message: "Could not delete todo with id " + req.params.todoId
+            message: "Could not delete todo with id " + req.body.id
         });
     });
 };

@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  background-color: #111111;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #ffffff;
+  height: 85%;
+  width: 30%;
+  border-radius: 16px;
+}
+
+header {
+  width: 100%;
+  margin: 10px 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.todo-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.todo-input {
+  padding: 5px;
+}
+
+.add-btn {
+  padding: 10px;
+}
+
+.todo-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.delete-all-btn {
+  width: 40%;
+}
+
+.todo-list {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  background-color: #cccccc;
+  padding-left: 5px;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.delete-btn {
+  padding: 7px;
+}

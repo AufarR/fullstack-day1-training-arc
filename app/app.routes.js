@@ -2,14 +2,22 @@ module.exports = (app) => {
     const todo = require('./app.controller.js');
 
     // Create a new todo
-    app.post('/todo', todo.create);
+    app.post('/api', todo.create);
 
     // Retrieve all todos
-    app.get('/todo', todo.findAll);
-
-    // Retrieve a single todo with todoId
-    app.get('/todo/:todoId', todo.findOne);
+    app.get('/api', todo.findAll);
 
     // Delete a todo with todoId
-    app.delete('/todo/:todoId', todo.delete);
+    app.delete('/api/:todoId', todo.delete);
+    
+    // Main page
+    app.get('/', function(req, res) {
+    	res.sendFile(__dirname + "/html/" + "index.html");
+    	});
+    app.get('/script.js', function(req, res) {
+    	res.sendFile(__dirname + "/html/" + "script.js");
+    	});
+    app.get('/style.css', function(req, res) {
+    	res.sendFile(__dirname + "/html/" + "style.css");
+    	});
 }
