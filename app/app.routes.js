@@ -8,7 +8,7 @@ module.exports = (app) => {
     app.get('/api', todo.findAll);
 
     // Delete a todo with todoId
-    app.delete('/api/:todoId', todo.delete);
+    app.delete('/api', todo.delete);
     
     // Main page
     app.get('/', function(req, res) {
