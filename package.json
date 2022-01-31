@@ -1,7 +1,7 @@
 {
-  "name": "tubes-training-arc",
+  "name": "fullstack-day1-training-arc",
   "version": "0.0.0",
-  "description": "Tugas Besar Training ARC 2022",
+  "description": "Day 1 Hands-On Training ARC 2022 (Full-Stack)",
   "main": "server.js",
   "scripts": {
       "start-prod": "NODE_ENV=production node ./server.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AufarR/tubes-training-arc.git"
+    "url": "git+https://github.com/AufarR/fullstack-day1-training-arc.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AufarR/tubes-training-arc/issues"
+    "url": "https://github.com/AufarR/fullstack-day1-training-arc/issues"
   },
-  "homepage": "https://github.com/AufarR/tubes-training-arc#readme",
+  "homepage": "https://github.com/AufarR/fullstack-day1-training-arc#readme",
   "dependencies": {
     "body-parser": "^1.19.1",
     "express": "^4.17.2",
