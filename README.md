@@ -15,4 +15,4 @@ Daftar todo akan langsung terlihat saat laman aplikasi dibuka
 1. Pilih todo yang hendak dihapus
 2. Tekan tombol (x) di samping todo yang hendak dihapus
 ## Screenshot aplikasi
-## Pembagian tugas
+![Screenshot 1](screenshots/ss-1.png)
