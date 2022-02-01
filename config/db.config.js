@@ -1,3 +1,3 @@
 module.exports = {
-    url: 'mongodb://localhost:27017/tubes-training-arc'
+    url: process.env.MONGODB_URI
 }
